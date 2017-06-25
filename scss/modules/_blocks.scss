@@ -1,0 +1,21 @@
+.page-top {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  background: url("../assets/img/bg-desktop.jpeg") no-repeat fixed;
+  @include cover;
+}
+
+#about {
+  width: 100vw;
+  max-width: 100%;
+  background: $gray;
+  color: $dark;
+}
+
+@media all and (min-width: 1024px) {
+  #about {
+    margin: 0 10%;
+    width: 80%;
+  }
+}

@@ -1,0 +1,14 @@
+button {
+  text-align: center;
+}
+
+.navicon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $light;
+  color: $dark;
+  font-size: 3em;
+  height: 2em;
+  width: 2em;
+}

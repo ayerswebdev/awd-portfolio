@@ -1,0 +1,28 @@
+header {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 4em;
+  background: $dark;
+}
+
+.header-item {
+  width: 15%;
+  height: 100%;
+  font-size: 1.5em;
+  color: $primary-color;
+}
+
+.header-item:hover {
+  color: $light;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media all and (min-width: 1024px) {
+  .header-item {
+    width: 12%;
+  }
+}

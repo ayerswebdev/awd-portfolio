@@ -24,6 +24,14 @@
   align-items: center;
 }
 
+.main-end {
+  justify-content: flex-end;
+}
+
+.cross-end {
+  align-items: flex-end;
+}
+
 .self-center {
   align-self: center;
 }
