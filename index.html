@@ -18,11 +18,10 @@
     <!--Import custom CSS and JavaScript files-->
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
-
-
   </head>
+
   <body>
-    <div class="page-top vertical-flex main-end cross-center">
+    <section class="page-top vertical-flex main-end cross-center">
       <div class="desktop-only">
         <header class="horizontal-flex main-end cross-center">
             <div class="header-item horizontal-flex main-center cross-center" id="about-btn">
@@ -37,14 +36,205 @@
         </header>
       </div>
 
-      <button class="btn mobile-only navicon"><i class="fa fa-bars"></i></button>
       <div class="intro">
         <h1><em>My name is Jake. I create beautiful and functional web interfaces.</em></h1>
+        <button class="intro-btn">Let me meet your needs</button>
       </div>
-    </div>
 
-    <div class="vertical-flex" id="about">
-      <h1 class="text-center">About Me</h1>
-    </div>
+      <p class="mobile-only learn-more">Scroll to learn more <span class="fa fa-chevron-down"></span></p>
+    </section>
+
+    <section class="vertical-flex about">
+      <div class="horizontal-flex  main-center cross-center">
+        <div class="about-img text-center"><img class="circle" id="picture" src="assets/img/tm-center.jpg" alt="A picture of me"></div>
+        <div class="about-text">
+          <h1 class="text-center">About Me</h1>
+          <p class="t-pad">
+            I am a front-end web developer currently working as a high school math teacher in
+            Warsaw, Illinois. I'm in the process of getting job-ready so that I can make the jump
+            into computer science as a career rather than a side job (and move to Vegas). When I'm not preparing
+            lessons or building websites, you're most likely to find me at the golf course or the
+            casino!
+            </thead>
+          </p>
+          <br />
+          <p>
+            I have experience in the front-end using HTML, CSS, and JavaScript (vanilla or jQuery). I am also proficient
+            in the use of CSS preprocessors such as SASS and front-end frameworks such as
+            Bootstrap. I'm a fast learner and I love to learn new things, so if your project requires me to learn something else I'm
+            all for it!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="vertical-flex work">
+      <h1 class="text-center">My Work</h1>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="well work-item text-center">
+            <a href="https://ayerswebdev.github.io/HHS-Remake" target="_blank"><img  class="work-img" src="assets/img/hhs-remake.jpg" alt="Hamilton Schools"></a>
+            <p>Remake of School District Webpage</p>
+
+            <div class="hidden-default" id="hhs-more">
+              <p class="text-left">
+                I graduated from Hamilton High School in Hamilton, IL. Now that I have learned how to build websites, I felt that I could make a much more user-friendly version
+                of <a href="http://www.hhs328.com" target="_blank">the current site</a>. While this is still a work in progress, I'm pleased with how it's going so far. Make sure to
+                check back often for updates!
+                <br />
+                <p class="text-left">For more information on this project, click the image to view the full site or check out the <a href="https://github.com/ayerswebdev/HHS-Remake" target="_blank">Github Repository</a>.</p>
+            </div>
+
+            <div id="hhs-drop">
+              <p class="dropdown" id="hhs-dropdown-more">More <span class="fa fa-chevron-down"></span></p>
+              <p class="hidden-default dropdown" id="hhs-dropdown-less">Less <span class="fa fa-chevron-up"></span></p>
+            </div>
+          </div>
+
+          <div class="well work-item text-center">
+            <a href="https://ayerswebdev.github.io/Weather-App" target="_blank"><img class="work-img" src="assets/img/weather-app.jpg" alt="Local Weather App"></a>
+            <p>Local Weather Application with Search</p>
+
+            <div class="hidden-default" id="weather-more">
+              <p class="text-left">
+                I originally created a local weather application without search capability as part of the freeCodeCamp curriculum. Later, as my skills grew, I decided that I would attempt
+                to allow the user to search for a location and get the weather there. The background is also dynamic based on weather conditions and (in some cases) time of day.
+              </p>
+              <br>
+              <p class="text-left">For more information on this project, click the image to view the full site or check out the <a href="https://github.com/ayerswebdev/Weather-App" target="_blank">Github Repository</a>.</p>
+            </div>
+
+            <div id="weather-drop">
+              <p class="dropdown" id="weather-dropdown-more">More <span class="fa fa-chevron-down"></span></p>
+              <p class="hidden-default dropdown" id="weather-dropdown-less">Less <span class="fa fa-chevron-up"></span></p>
+            </div>
+          </div>
+
+          <div class="well work-item text-center">
+            <a href="https://ayerswebdev.github.io/chess-timer/" target="_blank"><img class="work-img" src="assets/img/chess-timer.jpg" alt="Chess Timer App"></a>
+            <p>Basic Chess Timer</p>
+
+            <div class="hidden-default" id="chess-more">
+              <p class="text-left">
+                At my first teaching job, I was the teacher in charge of the school's chess club. There was a 25 minute time during each day during which the club met, but we found that many games
+                weren't getting done in that time because people were playing too slowly. So I built this timer and had students use it to ensure that the pace of play was quick. In this application, the two players
+                agree to a time per turn, then set it and switch turns with a button press. Easy and effective!
+              </p>
+              <br>
+              <p class="text-left">For more information on this project, click the image to view the full site or check out the <a href="https://github.com/ayerswebdev/chess-timer" target="_blank">Github Repository</a>.</p>
+            </div>
+
+            <div id="chess-drop">
+              <p class="dropdown" id="chess-dropdown-more">More <span class="fa fa-chevron-down"></span></p>
+              <p class="hidden-default dropdown" id="chess-dropdown-less">Less <span  class="fa fa-chevron-up"></span></p>
+            </div>
+          </div>
+
+          <div class="well work-item text-center">
+            <a href="#" target="_blank"><img class="work-img" src="assets/img/simon.jpg" alt="Simon Game"></a>
+            <p>Retro-Styled Simon Game</p>
+
+            <div class="hidden-default" id="simon-more">
+              <p class="text-left">
+                I'm a little too young to remember when these games were new to the market, but they're still fun to play (and build) today! On desktop, I opted for a more retro style based on images
+                of the original game that I found online. On mobile, I later decided to redo the design in a way that makes it a little more user-friendly for smaller screens. Everyone should be able
+                to enjoy this classic, right?
+              </p>
+              <br>
+              <p class="text-left">For more information on this project, click the image to view the full site or check out the <a href="https://github.com/ayerswebdev/simon-game" target="_blank">Github Repository</a>.</p>
+            </div>
+
+            <div id="simon-drop">
+              <p class="dropdown" id="simon-dropdown-more">More <span class="fa fa-chevron-down"></span></p>
+              <p class="hidden-default dropdown" id="simon-dropdown-less">Less <span class="fa fa-chevron-up"></span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="well work-item text-center">
+            <a href="#" target="_blank"><img src="assets/img/tic-tac-toe.jpg" alt="Tic Tac Toe Game" class="work-img"></a>
+            <p>Tic Tac Toe Game</p>
+
+            <div class="hidden-default" id="tic-tac-toe-more">
+              <p class="text-left">
+                We've all played tic-tac-toe before. It's a very simple game - two players try to make three marks in a row on a 3x3 square. Most players eventually grow out of it, though, because
+                once you have the basic strategy mastered you can't lose. I have crafted a master tic-tac-toe AI - beat it and I'll do your website for free!
+              </p>
+              <br>
+              <p class="text-left">For more information on this project, click the image to view the full site or check out the <a href="https://github.com/ayerswebdev/tic-tac-toe" target="_blank">Github Repository</a>.</p>
+            </div>
+
+            <div id="tic-tac-toe-drop">
+              <p class="dropdown" id="tic-tac-toe-dropdown-more">More <span class="fa fa-chevron-down"></span></p>
+              <p class="hidden-default dropdown" id="tic-tac-toe-dropdown-less">Less <span class="fa fa-chevron-up"></span></p>
+            </div>
+          </div>
+
+          <div class="well work-item text-center">
+            <a href="#" target="_blank"><img src="assets/img/pomodoro.jpg" alt="Pomodoro Timer" class="work-img"></a>
+            <p>Pomodoro Timer</p>
+
+            <div class="hidden-default" id="pomodoro-more">
+              <p class="text-left">
+                The Pomodoro Technique of time management is a technique in which you work (typically) 25 minutes non-stop, then take a five-minute break. It's a very effective way of keeping
+                yourself productive, and I have created a customizable Pomodoro Clock in this application. Try it out, and watch your productivity skyrocket (well, hopefully)!
+              </p>
+              <br>
+              <p class="text-left">For more information on this project, click the image to view the full site or check out the <a href="https://github.com/ayerswebdev/my-pomodoro" target="_blank">Github Repository</a>.</p>
+            </div>
+
+            <div id="pomodoro-drop">
+              <p class="dropdown" id="pomodoro-dropdown-more">More <span class="fa fa-chevron-down"></span></p>
+              <p class="hidden-default dropdown" id="pomodoro-dropdown-less">Less <span class="fa fa-chevron-up"></span></p>
+            </div>
+          </div>
+
+          <div class="well work-item text-center">
+            <a href="#" target="_blank"><img src="assets/img/calculator.jpg" alt="JavaScript Calculator" class="work-img"></a>
+            <p>JavaScript Calculator</p>
+
+            <div class="hidden-default" id="calculator-more">
+              <p class="text-left">
+                With my math background, building a calculator was way more exciting than it probably should have been. I took care to make sure that this one functions just like the ones I used
+                as a kid, even going beyond the project spec by adding a fully-functioning memory system. This calculator may not hold a candle to a TI-84 (yet; I want to go back and put in some
+                more functions when I get time), but I'm proud of it anyway!
+              </p>
+              <br>
+              <p class="text-left">For more information on this project, click the image to view the full site or check out the <a href="https://github.com/ayerswebdev/jscalc" target="_blank">Github Repository</a>.</p>
+            </div>
+
+            <div id="calculator-drop">
+              <p class="dropdown" id="calculator-dropdown-more">More <span class="fa fa-chevron-down"></span></p>
+              <p class="hidden-default dropdown" id="calculator-dropdown-less">Less <span class="fa fa-chevron-up"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="text-center">Resumes more your thing? I've got one of those too. <a class="light" href="assets/pdf/resume.pdf">Check it out!</a></p>
+      </div>
+    </section>
+
+    <section class="vertical-flex main-center cross-center contact">
+      <h1>Like What You See?</h1>
+      <p class="contact-text v-pad text-center">
+        I have recently started accepting projects, and would love to work with you. Tell me about your project and I'll get back to you ASAP!
+      </p>
+      <button class="btn get-started-btn">Get Started</button>
+    </section>
+
+    <footer class="vertical-flex main-center cross-center">
+      <p>Made fresh by Jake Ayers &copy; <span id="curr-year"></span></p>
+      <div class="social-buttons">
+        <a href="https://twitter.com/ayerswebdev" target="_blank"><button class="soc-btn"><span class="fa fa-twitter"></span></button></a>
+        <a href="https://plus.google.com/101771893809830762751" target="_blank"><button class="soc-btn"><i class="fa fa-google-plus"></i></button></a>
+        <a href="https://www.linkedin.com/in/jacob-ayers" target="_blank"><button class="soc-btn"><span class="fa fa-linkedin"></span></button></a>
+        <a href="https://www.freecodecamp.org/ayersj" target="_blank"><button class="soc-btn"><span class="fa fa-free-code-camp"></button></span></a>
+        <a href="https://www.github.com/ayerswebdev" target="_blank"><button class="soc-btn"><span class="fa fa-github"></button></span></a>
+      </div>
+    </footer>
   </body>
 </html>
