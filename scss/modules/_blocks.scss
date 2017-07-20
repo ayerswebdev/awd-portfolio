@@ -2,20 +2,76 @@
   width: 100vw;
   height: 100vh;
   max-width: 100%;
-  background: url("../assets/img/bg-desktop.jpeg") no-repeat fixed;
+  background: $dark;
   @include cover;
 }
 
-#about {
+.about {
   width: 100vw;
   max-width: 100%;
-  background: $gray;
+  background: $light;
   color: $dark;
 }
 
+.about-img {
+  width: 40%;
+  padding: 1.5em 0;
+}
+
+#picture {
+  width: 36vw;
+  height: 36vw;
+}
+
+.about-text {
+  width: 60%;
+  padding-right: 3em;
+}
+
+.work {
+  background: $gray;
+}
+
+.work-img {
+  width: 100%;
+}
+
+.work-item {
+  background: $light;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.dropdown:hover {
+  cursor: pointer;
+}
+
+.contact {
+  background: $primary-color;
+  height: 20em;
+}
+
+.contact-text {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 @media all and (min-width: 1024px) {
-  #about {
-    margin: 0 10%;
-    width: 80%;
+
+  .page-top {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    background: url("../assets/img/bg-desktop.jpeg") no-repeat fixed;
+  }
+
+  #podium {
+    width: 65%;
+  }
+
+  .work-item {
+    width: 90%;
+    margin-top: 0;
+    margin-left: 5%;
   }
 }

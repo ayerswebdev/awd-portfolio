@@ -1,11 +1,12 @@
 header {
-  position: absolute;
+  position: fixed;
   text-align: center;
   top: 0;
   left: 0;
   width: 100%;
   min-height: 4em;
-  background: $dark;
+  background: $dark-lightened;
+  z-index: 100;
 }
 
 .header-item {
@@ -20,6 +21,10 @@ header {
   color: $light;
   cursor: pointer;
   text-decoration: none;
+}
+
+.item-selected {
+  color: $light;
 }
 
 @media all and (min-width: 1024px) {

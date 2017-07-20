@@ -1,22 +1,86 @@
 body {
   font-size: 12px;
   font-family: $content-stack;
+  background: $gray;
 }
 
-body:nth-child(odd) {
-  background: $light;
-}
-
-body:nth-child(even) {
-  background: $dark;
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-stack;
 }
 
 h1 {
   font-size: 3em;
-  font-family: $heading-stack;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2.25em;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+h5 {
+  font-size: 1.8em;
+}
+
+h6 {
+  font-size: 1.6em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+a {
+  color: $primary-color;
+}
+
+a:hover {
+  color: $primary-color;
+}
+
+.l-pad {
+  padding-left: 1em;
+}
+
+.r-pad {
+  padding-right: 1em;
+}
+
+.t-pad {
+  padding-top: 1em;
+}
+
+.b-pad {
+  padding-bottom: 1em;
+}
+
+.v-pad {
+  @extend .t-pad, .b-pad;
+}
+
+.h-pad {
+  @extend .l-pad, .r-pad;
+}
+
+.all-pad {
+  @extend .v-pad, .h-pad;
+}
+
+.circle {
+  border-radius: 50%;
 }
 
 .light {
+  color: $light;
+}
+
+.light:hover {
   color: $light;
 }
 
@@ -24,13 +88,23 @@ h1 {
   color: $dark;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .intro {
   position: absolute;
-  top: 10%;
-  left: 10%;
+  top: 35%;
+  left: 20%;
   width: 60%;
   text-align: center;
-  color: $dark;
+  color: $primary-color;
+}
+
+.learn-more {
+  color: $primary-color;
+  position: absolute;
+  bottom: 0;
 }
 
 .desktop-only {
@@ -39,6 +113,10 @@ h1 {
 
 .mobile-only {
   display: block;
+}
+
+.hidden-default {
+  display: none;
 }
 
 @media all and (min-width: 1024px) {
@@ -59,6 +137,7 @@ h1 {
     top: 15%;
     left: 5%;
     width: 50%;
+    color: $dark;
   }
 }
 
